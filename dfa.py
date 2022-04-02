@@ -139,6 +139,6 @@ for ch in w:
     current_state = transitions[current_state][ch]
 
 if current_state in accept_states:
-    print('ACCEPT')
+    print(f'\nResult: ACCEPT\nLast state: {current_state}')
 else:
-    print('REJECT')
+    print(f'\nResult: REJECT\nLast state: {current_state}')
